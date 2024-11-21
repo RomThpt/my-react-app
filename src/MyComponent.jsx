@@ -1,26 +1,53 @@
 import React, { useState } from "react";
 
 const MyComponent = () => {
-    const [counter, counterState] = useState(0);
+    const [car, setCar] = useState({
+        year: 2024,
+        make: "Ford",
+        model: "Mustang",
+    });
+
+    const handleYearChange = (e) => {
+        setCar((c) => ({ ...c, year: e.target.value }));
+    };
+
+    const handleMakeChange = (e) => {
+        setCar((c) => ({ ...c, make: e.target.value }));
+    };
+
+    const handleModelChange = (e) => {
+        setCar((c) => ({ ...c, model: e.target.value }));
+    };
 
     return (
         <div>
-            <p>Count : {counter}</p>
-            <button
-                onClick={() => {
-                    counterState((c) => c + 1);
+            <p>
+                Your car is a {car.make} {car.model} from {car.year}
+            </p>
+            <input
+                type="number"
+                value={car.year}
+                onChange={(e) => {
+                    handleYearChange(e);
                 }}
-            >
-                Increment
-            </button>
-            <button
-                onClick={() => {
-                    counterState((c) => c - 1);
+            />{" "}
+            <br />
+            <input
+                type="text"
+                value={car.make}
+                onChange={(e) => {
+                    handleMakeChange(e);
                 }}
-            >
-                Decrement
-            </button>
-            <button onClick={() => counterState(0)}>Reset</button>
+            />{" "}
+            <br />
+            <input
+                type="text"
+                value={car.model}
+                onChange={(e) => {
+                    handleModelChange(e);
+                }}
+            />{" "}
+            <br />
         </div>
     );
 };
