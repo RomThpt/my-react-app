@@ -1,7 +1,5 @@
 # React Tutorial for Beginners
 
-This README documents the key concepts and applications I learned while following a React tutorial. The list below outlines the topics covered, along with a brief description of each.
-
 ## Topics Covered
 
 ### Card Components 🃏
