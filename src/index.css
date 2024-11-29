@@ -6,10 +6,45 @@ body {
     padding: 0;
 }
 
-.box {
-    background-color: hsl(193, 95%, 68%);
-    border-radius: 5px;
-    border: 2px solid hsl(0, 0%, 0%);
+.stopwatch {
+    font-size: 60px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.display {
+    font-weight: 100;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 0 0 10px white;
+}
+
+.controls button {
+    border: none;
+    color: white;
+    font-size: 16px;
     margin: 10px;
-    padding: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.start-button {
+    background-color: #28a745;
+}
+.stop-button {
+    background-color: #dc3545;
+}
+.reset-button {
+    background-color: #007bff;
+}
+
+.start-button:hover {
+    background-color: #218838;
+}
+.stop-button:hover {
+    background-color: #c82333;
+}
+.reset-button:hover {
+    background-color: #0056b3;
 }
