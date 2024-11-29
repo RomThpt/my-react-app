@@ -6,7 +6,7 @@
 
 •	Learned how to create reusable components for better code organization.
 
-# Add CSS Styles 🎨
+### Add CSS Styles 🎨
 
 •	Applied CSS styles to enhance the look and feel of components.
 
